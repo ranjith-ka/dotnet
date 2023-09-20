@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ranjith.a/code/github/dotnet/dotnet.csproj": {}
+    "/Users/ranjith.a/code/github/ranjith/dotnet/dotnet.csproj": {}
   },
   "projects": {
-    "/Users/ranjith.a/code/github/dotnet/dotnet.csproj": {
+    "/Users/ranjith.a/code/github/ranjith/dotnet/dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ranjith.a/code/github/dotnet/dotnet.csproj",
+        "projectUniqueName": "/Users/ranjith.a/code/github/ranjith/dotnet/dotnet.csproj",
         "projectName": "dotnet",
-        "projectPath": "/Users/ranjith.a/code/github/dotnet/dotnet.csproj",
+        "projectPath": "/Users/ranjith.a/code/github/ranjith/dotnet/dotnet.csproj",
         "packagesPath": "/Users/ranjith.a/.nuget/packages/",
-        "outputPath": "/Users/ranjith.a/code/github/dotnet/obj/",
+        "outputPath": "/Users/ranjith.a/code/github/ranjith/dotnet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ranjith.a/.nuget/NuGet/NuGet.Config"
@@ -20,7 +20,9 @@
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Maersk-Global/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -56,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     }
