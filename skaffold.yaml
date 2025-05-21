@@ -1,0 +1,26 @@
+apiVersion: skaffold/v4beta8
+kind: Config
+metadata:
+  name: dotnet
+build:
+  tagPolicy:
+    gitCommit: {}
+  artifacts:
+    - image: ranjithka/dotnet
+      docker:
+        dockerfile: Dockerfile
+  local:
+    push: false
+    tryImportMissing: true
+    useBuildkit: true
+    concurrency: 0
+    useDockerCLI: true
+profiles:
+  - name: dotnet
+requires:
+  - configs: ["prd"]
+    git:
+      repo: https://github.com/ranjith-ka/Devops.git
+      path: skaffold.yaml
+      ref: main
+      token: ${{ secrets.GH_TOKEN }}
