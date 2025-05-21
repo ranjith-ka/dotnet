@@ -15,6 +15,17 @@ build:
     useBuildkit: true
     concurrency: 0
     useDockerCLI: true
+deploy:
+  helm:
+    releases:
+      - name: dotnet
+        chartPath: chart/dotnet
+        valuesFiles:
+          - chart/dotnet/values.yaml
+        setValues:
+          image.repository: ranjithka/dotnet
+          image.tag: latest
+        namespace: default
 profiles:
   - name: dotnet
 requires:
@@ -23,4 +34,3 @@ requires:
       repo: https://github.com/ranjith-ka/Devops.git
       path: skaffold.yaml
       ref: main
-      token: ${{ secrets.GH_TOKEN }}
