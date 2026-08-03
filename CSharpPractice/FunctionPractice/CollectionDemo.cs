@@ -84,5 +84,35 @@ static class NewCollections
 
     }
 
+    internal static void DemoList()
+    {
+        // A List stores values of one specific type: here, only strings.
+        List<string> companies = new List<string>();
 
+        // Add items
+        companies.Add("Google");
+        companies.Add("Oyo");
+        companies.Add("Netflix");
+
+        // Read by index (index starts at 0)
+        Console.WriteLine(companies[0]); // Google
+
+        // Change an item
+        companies[1] = "YouTube";
+
+        // Remove an item
+        companies.Remove("Netflix");
+
+        // Check whether an item exists
+        Console.WriteLine(companies.Contains("Google")); // True
+
+        // Loop through every item
+        foreach (string company in companies)
+        {
+            Console.WriteLine(company);
+        }
+
+        // Total number of items
+        Console.WriteLine($"Count: {companies.Count}");
+    }
 }
