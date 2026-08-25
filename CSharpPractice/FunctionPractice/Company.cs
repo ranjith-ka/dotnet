@@ -8,4 +8,8 @@ public class CompanyInheritance
         CompanyId = companyId;
         CompanyName = companyName;
     }
+    public void DisplayData()
+    {
+        Console.WriteLine($"Id: {CompanyId}, Name: {CompanyName}");
+    }
 }

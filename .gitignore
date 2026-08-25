@@ -69,3 +69,4 @@ _ReSharper*/
 # All files under obj folder
 obj/**/*.*
 .vs/
+npmcache/**
