@@ -70,3 +70,7 @@ _ReSharper*/
 obj/**/*.*
 .vs/
 npmcache/**
+
+# Local learning plan, progress, and revision notes
+/tutorials/dotnet/LEARNING_TRACKS.md
+/tutorials/dotnet/progress/

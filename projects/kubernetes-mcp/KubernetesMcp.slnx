@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/KubernetesMcp.Api/KubernetesMcp.Api.csproj" />
+    <Project Path="src/KubernetesMcp.Client/KubernetesMcp.Client.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/KubernetesMcp.Tests/KubernetesMcp.Tests.csproj" />
+  </Folder>
+</Solution>

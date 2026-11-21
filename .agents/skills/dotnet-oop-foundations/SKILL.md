@@ -9,6 +9,24 @@ Ground the lesson in `tutorials/dotnet/DOTNET_CSHARP_OOP_BASICS.md`. Read sectio
 
 ## Learning contract
 
+At the start of a skill or new lesson session, follow the guide's
+[time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill).
+State the whole-skill estimate, today's 15/30/45-minute duration, one goal, and
+completion checkpoint. Default to 15 minutes; show actual start and planned
+finish times when the learner starts. Track demonstrated progress in chat.
+
+Read [the learning tracks guide](../../../tutorials/dotnet/LEARNING_TRACKS.md).
+Use `tutorials/dotnet/CSharpFoundations.slnx`. Start with the actual
+`tutorials/dotnet/practice/02-operators/Program.cs`, its `DeploymentLogic.cs`, and
+`tutorials/dotnet/practice/02-operators.Tests/DeploymentLogicTests.cs`.
+Run `make basics` or `make test-basics`; `make run` and `make test` are aliases.
+Keep MCP framework and cluster code in its separate application solution.
+
+When syntax is overwhelming, introduce one concept at a time. Distinguish chosen
+identifiers from keywords, operators, and punctuation. Trace `HasEnoughPods`
+from caller argument to parameter, comparison, return value, and receiving
+variable. Ask one prediction question and wait before revealing its answer.
+
 Use a code-reading-first workflow. Codex creates, edits, and runs the small examples. Do not require the learner to type or modify code unless they explicitly ask to practise writing it. The learner's work is to trace execution, interpret names and types, predict results, review behavior, and explain the code back in plain language.
 
 ## Teach

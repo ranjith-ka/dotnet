@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="xunit.v3.mtp-v2" Version="4.0.3" />
+    <ProjectReference Include="../../src/KubernetesMcp.Api/KubernetesMcp.Api.csproj" />
+  </ItemGroup>
+</Project>
