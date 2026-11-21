@@ -1,10 +1,10 @@
 # FunctionPractice
 
-A small .NET 8 console application for practising fundamental C# concepts.
+A small .NET 10 console application for practising fundamental C# concepts.
 
 ## Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
 - Optional: Visual Studio Code with the **C# Dev Kit** extension for interactive debugging
 
 ## Run the application
