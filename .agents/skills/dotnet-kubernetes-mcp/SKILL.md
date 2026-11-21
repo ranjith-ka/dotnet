@@ -11,6 +11,14 @@ inspect the relevant source in `projects/kubernetes-mcp/KubernetesMcp.slnx`.
 
 ## Keep the tracks separate
 
+Keep replies short: a few short sentences, one small code example, and one question.
+Use short comments and lines. Explain one concept; expand when asked.
+
+Present each learner question as two labeled choices, A and B, so a single-letter
+reply is enough. Use meaningful choices about reasoning or code behavior.
+Explain incorrect choices briefly, then reassess with another A/B question.
+Accept free-text answers too; ask for writing only when requested.
+
 Begin each new lesson session with the guide's
 [time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill):
 whole-skill estimate, a 15/30/45-minute session (default 15), one goal, and its
@@ -26,6 +34,13 @@ When prerequisites block understanding, use the relevant `dotnet-oop` skill and
 `tutorials/dotnet/CSharpFoundations.slnx`. Keep framework code in the MCP solution.
 
 ## Ground lessons in the actual code
+
+Use correct C# terms in simple sentences, defining each using the current code:
+class, object, constructor, parameter, argument, property, method, declaration,
+and assignment. For example, "Call the constructor, passing kind-k8s as an
+argument." Introduce SDK terms separately as needed. When requested to annotate
+code, use the same vocabulary in concise adjacent comments. Preserve behavior
+for comment-only requests and do not edit files during chat-only lessons.
 
 - `src/KubernetesMcp.Api/Program.cs`: HTTP `/mcp` by default; `--stdio` supports
   the self-contained client and real-cluster integration test.

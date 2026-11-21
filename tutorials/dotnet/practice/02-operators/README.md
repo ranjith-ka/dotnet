@@ -3,14 +3,33 @@
 Open [CSharpFoundations.slnx](../../CSharpFoundations.slnx) for this learning track.
 It contains only the beginner console program and its deployment-logic tests.
 
+## Small lesson files
+
+| File | Topic |
+|---|---|
+| [Program.cs](./Program.cs) | Calls that run the lessons in order |
+| [BasicsMethods.cs](./BasicsMethods.cs) | Method arguments, comparisons, and return values |
+| [C1C2ClassesAndObjects.cs](./C1C2ClassesAndObjects.cs) | Class, object, properties, and behavior |
+| [C3Constructors.cs](./C3Constructors.cs) | Constructor arguments and property assignment |
+| [C4InstanceAndStatic.cs](./C4InstanceAndStatic.cs) | Instance and static method calls |
+| [C5SharedReferences.cs](./C5SharedReferences.cs) | Shared references versus separate objects |
+| [KubernetesDeployment.cs](./KubernetesDeployment.cs) | Shared class, properties, one-parameter constructor, and PrintStatus |
+
+Each lesson has a static `Run()` method called by `Program.cs`. Its variables
+belong to that method, so you can read each lesson independently.
+
+The class has one constructor: `KubernetesDeployment(int replicas)`.
+It assigns the parameter to `Replicas`. All lessons use this version;
+the earlier missing-assignment demonstration has been removed.
+
 Follow [the learning tracks guide](../../LEARNING_TRACKS.md) and start with
 `$dotnet-oop-foundations`. Introduce one concept at a time, predict the output,
 and explain the value flow before moving to the next lesson.
 
-Start with `Program.cs` and `DeploymentLogic.HasEnoughPods`:
+Start with `BasicsMethods.cs` and `DeploymentLogic.HasEnoughPods`:
 
 ```csharp
-int runningPods = 2;
+int runningPods = 3;
 bool hasEnoughPods = DeploymentLogic.HasEnoughPods(runningPods);
 ```
 

@@ -1,6 +1,14 @@
-// Foundations track: pass a number into a method and read its answer.
-int runningPods = 2;
-bool hasEnoughPods = DeploymentLogic.HasEnoughPods(runningPods);
+Console.WriteLine("=== Basics: Methods ===");
+BasicsMethods.Run();
 
-Console.WriteLine($"Running pods: {runningPods}");
-Console.WriteLine($"Has enough pods: {hasEnoughPods}");
+Console.WriteLine("\n=== C1 + C2: Objects, State, and Behavior ===");
+C1C2ClassesAndObjects.Run();
+
+Console.WriteLine("\n=== C3: Constructors ===");
+C3Constructors.Run();
+
+Console.WriteLine("\n=== C4: Instance and Static ===");
+C4InstanceAndStatic.Run();
+
+Console.WriteLine("\n=== C5: Shared References ===");
+C5SharedReferences.Run();

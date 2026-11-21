@@ -9,6 +9,14 @@ Ground the lesson in `tutorials/dotnet/DOTNET_CSHARP_OOP_BASICS.md`. Read sectio
 
 ## Learning contract
 
+Keep replies short: a few short sentences, one small code example, and one question.
+Use short comments and lines. Explain one concept; expand when asked.
+
+Present each learner question as two labeled choices, A and B, so a single-letter
+reply is enough. Use meaningful choices about reasoning or code behavior.
+Explain incorrect choices briefly, then reassess with another A/B question.
+Accept free-text answers too; ask for writing only when requested.
+
 Begin each new lesson session with the guide's
 [time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill):
 whole-skill estimate, a 15/30/45-minute session (default 15), one goal, and its
@@ -25,6 +33,14 @@ changes belong to the separate `projects/kubernetes-mcp/` solution.
 Use a code-reading and code-review workflow. Codex writes and runs both unsafe and encapsulated examples. Do not require the learner to implement fixes unless they explicitly request writing practice. Ask the learner to find exposed state, predict whether invalid operations compile or throw, and explain which invariant each member protects.
 
 ## Explain code
+
+Use correct C# terms in simple sentences and define them using the current code:
+class, object, constructor, parameter, argument, property, field, access modifier,
+setter, method, and assignment. For example, "Assign the parameter replicas to
+this object's Replicas property." Prefer the foundations Kubernetes examples
+when relevant. When requested, add concise adjacent comments with the same terms
+used in chat. Preserve behavior for comment-only requests and keep chat-only
+lessons free of file edits.
 
 For each relevant member, explain:
 

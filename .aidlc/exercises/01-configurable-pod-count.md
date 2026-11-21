@@ -15,7 +15,7 @@ This exercise compares supplied numbers; it does not query Kubernetes or change
 the separate MCP tool.
 
 Sources: [DeploymentLogic.cs](../../tutorials/dotnet/practice/02-operators/DeploymentLogic.cs),
-[Program.cs](../../tutorials/dotnet/practice/02-operators/Program.cs), and
+[BasicsMethods.cs](../../tutorials/dotnet/practice/02-operators/BasicsMethods.cs), and
 [DeploymentLogicTests.cs](../../tutorials/dotnet/practice/02-operators.Tests/DeploymentLogicTests.cs).
 
 ```csharp
@@ -25,8 +25,8 @@ public static bool HasEnoughPods(int runningPods)
 }
 ```
 
-The method compares running pods with a fixed threshold of 3. Program.cs supplies
-2 running pods, so the current method returns false. The existing tests directly
+The method compares running pods with a fixed threshold of 3. BasicsMethods.cs supplies
+3 running pods, so the current method returns true. The existing tests directly
 cover HasEnoughPods with 2, 3, and 4 running pods, as well as total-pod calculation,
 deployment success, and attention conditions. Re-read the source before starting
 the exercise if it has changed.
@@ -41,7 +41,7 @@ different thresholds.
 - Receive the running count and required count as integer inputs.
 - For valid counts, return true when running is greater than or equal to required.
 - Return false when running is below required.
-- Preserve the current example's result (false for 2 running pods) by supplying
+- Preserve the current example's result (true for 3 running pods) by supplying
   a required count of 3.
 - Keep the other deployment calculations unchanged.
 
@@ -76,7 +76,7 @@ this exercise. Those concepts belong in later lessons with suitable requirements
 ## Operation: local verification
 
 Run make basics after implementation. Confirm the tests pass and the example's
-"Has enough pods" output remains False for 2 running and 3 required pods.
+"Has enough pods" output remains True for 3 running and 3 required pods.
 Use a test to verify equality returns true when both counts are 3.
 
 ## Decision record

@@ -9,6 +9,14 @@ Ground the lesson in `tutorials/dotnet/DOTNET_CSHARP_OOP_BASICS.md`. Read sectio
 
 ## Learning contract
 
+Keep replies short: a few short sentences, one small code example, and one question.
+Use short comments and lines. Explain one concept; expand when asked.
+
+Present each learner question as two labeled choices, A and B, so a single-letter
+reply is enough. Use meaningful choices about reasoning or code behavior.
+Explain incorrect choices briefly, then reassess with another A/B question.
+Accept free-text answers too; ask for writing only when requested.
+
 Begin each new lesson session with the guide's
 [time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill):
 whole-skill estimate, a 15/30/45-minute session (default 15), one goal, and its
@@ -17,7 +25,17 @@ Complete the skill based on demonstrated understanding, not elapsed time.
 
 Read [the learning tracks guide](../../../tutorials/dotnet/LEARNING_TRACKS.md).
 Teach in `tutorials/dotnet/CSharpFoundations.slnx`, using `make basics` and
-`make test-basics`. Inspect the actual files: the tutorial's `Service` example
+`make test-basics`. In `tutorials/dotnet/practice/02-operators/`, use
+`C1C2ClassesAndObjects.cs`, `C3Constructors.cs`, `C4InstanceAndStatic.cs`,
+and `C5SharedReferences.cs`
+for the respective checkpoints. `Program.cs` calls their static Run methods;
+`KubernetesDeployment.cs` holds the shared model. Read only the relevant small
+lesson and model block rather than presenting all files at once.
+The model currently has only `KubernetesDeployment(int replicas)`, which assigns
+`Replicas = replicas;`. Use that single-parameter version for constructor lessons.
+The previous parameterless, three-parameter, and missing-assignment examples
+were removed at the learner's request; do not assume they still exist.
+Inspect the actual files: the tutorial's `Service` example
 is not necessarily implemented. Add class examples to this foundations track
 when requested, keeping MCP code in `projects/kubernetes-mcp/`.
 Introduce one concept at a time, explain identifiers and punctuation simply,
@@ -55,6 +73,19 @@ is incorrect, correct it and reassess before marking complete. Mark the skill
 complete only when all checkpoints and the readiness criteria below are met.
 
 ### Explain the code
+
+Use correct C# terms in simple sentences: class, object, constructor, parameter,
+argument, property, field, instance/static method, declaration, and assignment.
+Explain each new term using the current code, rather than replacing it entirely
+with an everyday analogy. For example, read `Replicas = replicas;` as "Assign
+the parameter replicas to this object's Replicas property." Distinguish calling
+a constructor from declaring one, and parameters from call-site arguments.
+
+Prefer small Kubernetes deployment examples in the foundations solution. Explain
+one block, then ask one identification or prediction question and wait. When the
+learner requests code or comment changes, place concise explanations beside the
+relevant statements using the same terminology as the chat. Preserve program
+behavior for comment-only requests; do not change code during chat-only lessons.
 
 - Name the source file and exact line or block being discussed.
 - Separate four ideas: class as blueprint, object as instance, properties or fields as state, and methods as behavior.

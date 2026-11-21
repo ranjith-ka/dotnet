@@ -9,6 +9,14 @@ Ground the lab in `tutorials/dotnet/DOTNET_CSHARP_OOP_BASICS.md`. Read sections 
 
 ## Learning contract
 
+Keep replies short: a few short sentences, one small code example, and one question.
+Use short comments and lines. Explain one concept; expand when asked.
+
+Present each learner question as two labeled choices, A and B, so a single-letter
+reply is enough. Use meaningful choices about reasoning or code behavior.
+Explain incorrect choices briefly, then reassess with another A/B question.
+Accept free-text answers too; ask for writing only when requested.
+
 Begin each new lesson session with the guide's
 [time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill):
 whole-skill estimate, a 15/30/45-minute session (default 15), one goal, and its
@@ -26,6 +34,13 @@ prediction response before revealing the result.
 Codex owns implementation and execution unless the learner explicitly asks to write code. The learner acts as a developer reviewing a change: read the diff, trace state transitions, predict output and failures, inspect runtime evidence, and explain the design decision.
 
 ## Lab loop
+
+Explain code using correct C# terms in simple sentences: declare a class or
+variable, create an object, call a constructor or method, pass arguments, receive
+parameters, assign properties, and return values. Define unfamiliar terms in
+the current block. When the learner requests comments, use the same vocabulary
+in concise adjacent comments. Keep behavior unchanged for comment-only changes;
+respect a request to keep the lesson in chat.
 
 Work one change at a time:
 

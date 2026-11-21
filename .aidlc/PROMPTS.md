@@ -16,10 +16,11 @@ Use $dotnet-oop-foundations and tutorials/dotnet/CSharpFoundations.slnx.
 
 Read these files:
 - tutorials/dotnet/practice/02-operators/Program.cs
+- tutorials/dotnet/practice/02-operators/BasicsMethods.cs
 - tutorials/dotnet/practice/02-operators/DeploymentLogic.cs
 - tutorials/dotnet/practice/02-operators.Tests/DeploymentLogicTests.cs
 
-Start with HasEnoughPods and its call in Program.cs. Explain the goal, method
+Start with HasEnoughPods and its call in BasicsMethods.cs. Explain the goal, method
 declaration, parameter, argument, comparison, return value, and receiving variable.
 Trace how the value moves through the code. Explain unfamiliar syntax simply.
 
