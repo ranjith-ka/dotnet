@@ -18,7 +18,12 @@ The OOP tutorial has four local teaching skills:
 Run the operators tests after changing its logic:
 
 ```bash
-make dotnet-operators
+make run
 ```
 
 This runs the tests first and runs the application only when every test passes.
+
+Run only the tests with `make test`. The longer commands `make dotnet-operators`
+and `make dotnet-operators-test` remain available.
+
+The SDK configuration accepts later .NET 10 feature bands, including 10.0.301.

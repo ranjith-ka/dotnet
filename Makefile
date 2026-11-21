@@ -4,10 +4,16 @@ DOTNET ?= dotnet
 
 .DEFAULT_GOAL := help
 
-.PHONY: help dotnet-operators dotnet-operators-test
+.PHONY: help run test dotnet-operators dotnet-operators-test
 help:
+	@echo "make run                   Run tests, then run the operators program"
+	@echo "make test                  Run only the operators tests"
 	@echo "make dotnet-operators       Run tests, then run the operators program"
 	@echo "make dotnet-operators-test  Run only the operators tests"
+
+run: dotnet-operators
+
+test: dotnet-operators-test
 
 dotnet-operators: dotnet-operators-test
 	@echo Running the operators practice program
