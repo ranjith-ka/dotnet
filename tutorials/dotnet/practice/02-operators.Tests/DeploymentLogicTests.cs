@@ -2,6 +2,17 @@ using Xunit;
 
 public class DeploymentLogicTests
 {
+    [Theory]
+    [InlineData(2, false)]
+    [InlineData(3, true)]
+    [InlineData(4, true)]
+    public void HasEnoughPods_RequiresAtLeastThreeRunningPods(int runningPods, bool expected)
+    {
+        bool result = DeploymentLogic.HasEnoughPods(runningPods);
+
+        Assert.Equal(expected, result);
+    }
+
     [Fact]
     public void CalculateTotalPods_AddsRunningAndPendingPods()
     {

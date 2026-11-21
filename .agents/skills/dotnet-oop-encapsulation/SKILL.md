@@ -9,6 +9,19 @@ Ground the lesson in `tutorials/dotnet/DOTNET_CSHARP_OOP_BASICS.md`. Read sectio
 
 ## Learning contract
 
+Begin each new lesson session with the guide's
+[time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill):
+whole-skill estimate, a 15/30/45-minute session (default 15), one goal, and its
+checkpoint. Show start and planned finish times when the learner starts.
+Complete the skill based on demonstrated understanding, not elapsed time.
+
+Read [the learning tracks guide](../../../tutorials/dotnet/LEARNING_TRACKS.md).
+Keep examples in `tutorials/dotnet/CSharpFoundations.slnx`, using `make basics`
+and `make test-basics`. Inspect actual files before assuming the tutorial's
+`Deployment` class exists. Introduce one rule at a time and wait for the
+learner's prediction before explaining its result. MCP framework and cluster
+changes belong to the separate `projects/kubernetes-mcp/` solution.
+
 Use a code-reading and code-review workflow. Codex writes and runs both unsafe and encapsulated examples. Do not require the learner to implement fixes unless they explicitly request writing practice. Ask the learner to find exposed state, predict whether invalid operations compile or throw, and explain which invariant each member protects.
 
 ## Explain code

@@ -7,6 +7,17 @@ This chapter moves from reading small C# snippets to understanding a simple obje
 **Target framework:** .NET 10 (`net10.0`)
 **Time:** ~60–90 minutes
 
+For the existing repository project, open
+[CSharpFoundations.slnx](./CSharpFoundations.slnx) and follow
+[the learning tracks guide](./LEARNING_TRACKS.md). Run `make basics` from the
+repository root. Its current example starts with `HasEnoughPods` and ordinary
+numbers; Kubernetes and MCP are not required. The `dotnet new` instructions below
+are for creating a separate project from scratch. Later class and lab snippets
+are teaching examples to introduce gradually, not a list of already-created files.
+
+The [Kubernetes MCP application](../../projects/kubernetes-mcp/README.md) is a
+separate solution for applying these concepts when you choose that track.
+
 ---
 
 ## What you will learn

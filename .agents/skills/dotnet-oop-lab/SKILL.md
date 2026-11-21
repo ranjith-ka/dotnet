@@ -9,6 +9,20 @@ Ground the lab in `tutorials/dotnet/DOTNET_CSHARP_OOP_BASICS.md`. Read sections 
 
 ## Learning contract
 
+Begin each new lesson session with the guide's
+[time and completion protocol](../../../tutorials/dotnet/LEARNING_TRACKS.md#time-and-completion-for-each-skill):
+whole-skill estimate, a 15/30/45-minute session (default 15), one goal, and its
+checkpoint. Show start and planned finish times when the learner starts.
+Complete the skill based on demonstrated understanding, not elapsed time.
+
+Read [the learning tracks guide](../../../tutorials/dotnet/LEARNING_TRACKS.md).
+Use `tutorials/dotnet/CSharpFoundations.slnx`; add the tutorial's `Deployment`
+class to its console project only when that lab implementation is requested.
+`make basics` runs foundations tests and the app; `make test-basics` runs tests
+alone. Keep the MCP API, client, and cluster tests in their separate solution.
+Explain new identifiers and syntax in small blocks, and wait for the learner's
+prediction response before revealing the result.
+
 Codex owns implementation and execution unless the learner explicitly asks to write code. The learner acts as a developer reviewing a change: read the diff, trace state transitions, predict output and failures, inspect runtime evidence, and explain the design decision.
 
 ## Lab loop

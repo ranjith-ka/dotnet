@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="practice/02-operators/OperatorsPractice.csproj" />
+  <Project Path="practice/02-operators.Tests/OperatorsPractice.Tests.csproj" />
+</Solution>
